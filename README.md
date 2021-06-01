@@ -1,3 +1,3 @@
 # calculation-of-resistors
 
-For use this, need a lib of PySimpleGUI
+To use this, need a PySimpleGUI lib 
