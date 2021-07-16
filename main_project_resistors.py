@@ -18,17 +18,17 @@ while True:
         if event == (1.2):                
                 window.hide()
                 layout2 = [
-                        [sg.Text("Qual é a Voltagem?:                " ),sg.Input(              key=1.1                   )],
-                        [sg.Text("Qual é o primeiro resistor?:       " ),sg.Input(              key=1.2                   )],
-                        [sg.Text("Qual é o segundo resistor?:       "  ),sg.Input(              key=1.3                   )],
+                        [sg.Text("Qual é a Voltagem?:                " ),sg.Input(              key=1.1                  )],
+                        [sg.Text("Qual é o primeiro resistor?:       " ),sg.Input(              key=1.2                  )],
+                        [sg.Text("Qual é o segundo resistor?:       "  ),sg.Input(              key=1.3                  )],
                         [sg.Text('A resistencia equivalente é:  '      ),sg.Text(size=(5,1),    key='1.1.1'), sg.Text('Ω')],
-                        [sg.Text('Tensão total:                      ' ),sg.Text(size=(5,1),    key='1.1.2'), sg.Text('A')],
-                        [sg.Text('corrente inteira:                  ' ),sg.Text(size=(5,1),    key='1.1.3'), sg.Text('W')],
+                        [sg.Text('Corrente total:                     '),sg.Text(size=(5,1),    key='1.1.2'), sg.Text('A')],
+                        [sg.Text('Potencia inteira:                  ' ),sg.Text(size=(5,1),    key='1.1.3'), sg.Text('W')],
                         [sg.Text('corrente do resistor 1:         '    ),sg.Text(size=(5,1 ),   key='1.2.1'), sg.Text('A')],
                         [sg.Text('corrente do resistor 2:         '    ),sg.Text(size=(5,1 ),   key='1.2.2'), sg.Text('A')],
                         [sg.Text('Potencia 1:                         '),sg.Text(size=(5,1),    key='1.3.1'), sg.Text('W')],
                         [sg.Text('Potencia 2:                         '),sg.Text(size=(5,1),    key='1.3.2'), sg.Text('W')],                        
-                        [sg.Button('calcular'                          ),sg.Button('Exit'                                )]]
+                        [sg.Button('calcular'                          ),sg.Button('Exit'                               )]]
                 window2 = sg.Window("2 resistores em paralelo", layout2,size=(400,700))        
                 while True:
                         event2, values2 = window2.read()
@@ -62,8 +62,8 @@ while True:
                         [sg.Text("Qual é o segundo resistor?:"         ),sg.Input               (key=1.3                  )],
                         [sg.Text("Qual é o terceiro resistor?: "       ),sg.Input               (key=1.4                  )],
                         [sg.Text('a resistencia equivalente é:'        ),sg.Text(size=(5,1),     key='1.1.1'), sg.Text('Ω')],
-                        [sg.Text('Tensão total:                    '   ),sg.Text(size=(5,1),     key='1.1.2'), sg.Text('A')],
-                        [sg.Text('corrente inteira:                '   ),sg.Text(size=(5,1),     key='1.1.3'), sg.Text('W')],
+                        [sg.Text('Corrente total:                    ' ),sg.Text(size=(5,1),     key='1.1.2'), sg.Text('A')],
+                        [sg.Text('Potencia inteira:                '   ),sg.Text(size=(5,1),     key='1.1.3'), sg.Text('W')],
                         [sg.Text('corrente do resistor 1:       '      ),sg.Text(size=(5,1),     key='1.2.1'), sg.Text('A')],
                         [sg.Text('corrente do resistor 2:       '      ),sg.Text(size=(5,1),     key='1.2.2'), sg.Text('A')],
                         [sg.Text('corrente do resistor 3:       '      ),sg.Text(size=(5,1),     key='1.2.3'), sg.Text('A')],
@@ -110,8 +110,8 @@ while True:
                         [sg.Text("Qual é o terceiro resistor?: "       ),sg.Input               (key=1.4                  )],
                         [sg.Text("Qual é o quatro resistor?:   "       ),sg.Input               (key=1.5                  )],
                         [sg.Text('a resistencia equivalente é:'        ),sg.Text(size=(5,1),     key='1.1.1'), sg.Text('Ω')],
-                        [sg.Text('Tensão total:                    '   ),sg.Text(size=(5,1),     key='1.1.2'), sg.Text('A')],
-                        [sg.Text('corrente inteira:                '   ),sg.Text(size=(5,1),     key='1.1.3'), sg.Text('W')],
+                        [sg.Text('Corrente total:                    ' ),sg.Text(size=(5,1),     key='1.1.2'), sg.Text('A')],
+                        [sg.Text('Potencia inteira:                '   ),sg.Text(size=(5,1),     key='1.1.3'), sg.Text('W')],
                         [sg.Text('corrente do resistor 1:       '      ),sg.Text(size=(5,1),     key='1.2.1'), sg.Text('A')],
                         [sg.Text('corrente do resistor 2:       '      ),sg.Text(size=(5,1),     key='1.2.2'), sg.Text('A')],
                         [sg.Text('corrente do resistor 3:       '      ),sg.Text(size=(5,1),     key='1.2.3'), sg.Text('A')],
@@ -120,7 +120,7 @@ while True:
                         [sg.Text('Potencia 2:                       '  ),sg.Text(size=(5,1),     key='1.3.2'), sg.Text('W')],
                         [sg.Text('Potencia 3:                       '  ),sg.Text(size=(5,1),     key='1.3.3'), sg.Text('W')],
                         [sg.Text('Potencia 4:                       '  ),sg.Text(size=(5,1),     key='1.3.4'), sg.Text('W')],                     
-                        [sg.Button('calcular'                          ),sg.Button('Exit'                                 )]]
+                        [sg.Button('calcular'                          ),sg.Button('Exit'                                )]]
                 window4 = sg.Window("4 resistores em paralelo", layout4,size=(700,700))        
                 while True:
                         event4, values4 = window4.read()
@@ -166,8 +166,8 @@ while True:
                         [sg.Text("Qual é o quatro resistor?:   "        ),sg.Input              (key=1.5                  )],
                         [sg.Text("Qual é o quinto resistor?:   "        ),sg.Input              (key=1.6                  )],
                         [sg.Text('a resistencia equivalente é:'         ),sg.Text(size=(5,1),    key='1.1.1'), sg.Text('Ω')],
-                        [sg.Text('Tensão total:                    '    ),sg.Text(size=(5,1),    key='1.1.2'), sg.Text('A')],
-                        [sg.Text('corrente inteira:                '    ),sg.Text(size=(5,1),    key='1.1.3'), sg.Text('W')],
+                        [sg.Text('Corrente total:                    '  ),sg.Text(size=(5,1),    key='1.1.2'), sg.Text('A')],
+                        [sg.Text('Potencia inteira:                '    ),sg.Text(size=(5,1),    key='1.1.3'), sg.Text('W')],
                         [sg.Text('corrente do resistor 1:       '       ),sg.Text(size=(5,1),    key='1.2.1'), sg.Text('A')],
                         [sg.Text('corrente do resistor 2:       '       ),sg.Text(size=(5,1),    key='1.2.2'), sg.Text('A')],
                         [sg.Text('corrente do resistor 3:       '       ),sg.Text(size=(5,1),    key='1.2.3'), sg.Text('A')],
@@ -226,8 +226,8 @@ while True:
                         [sg.Text("Qual é o primeiro resistor?:       " ),sg.Input(              key=1.2                  )],
                         [sg.Text("Qual é o segundo resistor?:       "  ),sg.Input(              key=1.3                  )],
                         [sg.Text('A resistencia equivalente é:  '      ),sg.Text(size=(5,1),    key='2.1.1'), sg.Text('Ω')],
-                        [sg.Text('Tensão total:                      ' ),sg.Text(size=(5,1),    key='2.1.2'), sg.Text('A')],
-                        [sg.Text('corrente inteira:                  ' ),sg.Text(size=(5,1),    key='2.1.3'), sg.Text('W')],
+                        [sg.Text('Corrente total:                      ' ),sg.Text(size=(5,1),    key='2.1.2'), sg.Text('A')],
+                        [sg.Text('Potencia inteira:                  ' ),sg.Text(size=(5,1),    key='2.1.3'), sg.Text('W')],
                         [sg.Text('Tensão do resistor 1:           '    ),sg.Text(size=(5,1 ),   key='2.2.1'), sg.Text('V')],
                         [sg.Text('Tensão do resistor 2:           '    ),sg.Text(size=(5,1 ),   key='2.2.2'), sg.Text('V')],
                         [sg.Text('Potencia 1:                         '),sg.Text(size=(5,1),    key='2.3.1'), sg.Text('W')],
@@ -266,15 +266,15 @@ while True:
                         [sg.Text("Qual é o segundo resistor?:"         ),sg.Input               (key=1.3                  )],
                         [sg.Text("Qual é o terceiro resistor?: "       ),sg.Input               (key=1.4                  )],
                         [sg.Text('a resistencia equivalente é:'        ),sg.Text(size=(5,1),     key='2.1.1'), sg.Text('Ω')],
-                        [sg.Text('Tensão total:                    '   ),sg.Text(size=(5,1),     key='2.1.2'), sg.Text('A')],
-                        [sg.Text('corrente inteira:                '   ),sg.Text(size=(5,1),     key='2.1.3'), sg.Text('W')],
+                        [sg.Text('Corrente total:                    ' ),sg.Text(size=(5,1),     key='2.1.2'), sg.Text('A')],
+                        [sg.Text('Potencia inteira:                '   ),sg.Text(size=(5,1),     key='2.1.3'), sg.Text('W')],
                         [sg.Text('Tensão do resistor 1:         '      ),sg.Text(size=(5,1),     key='2.2.1'), sg.Text('V')],
                         [sg.Text('Tensão do resistor 2:         '      ),sg.Text(size=(5,1),     key='2.2.2'), sg.Text('V')],
                         [sg.Text('Tensão do resistor 3:         '      ),sg.Text(size=(5,1),     key='2.2.3'), sg.Text('V')],
                         [sg.Text('Potencia 1:                       '  ),sg.Text(size=(5,1),     key='2.3.1'), sg.Text('W')],
                         [sg.Text('Potencia 2:                       '  ),sg.Text(size=(5,1),     key='2.3.2'), sg.Text('W')],
                         [sg.Text('Potencia 3:                       '  ),sg.Text(size=(5,1),     key='2.3.3'), sg.Text('W')],                        
-                        [sg.Button('calcular'                          ),sg.Button('Exit'                                 )]]
+                        [sg.Button('calcular'                          ),sg.Button('Exit'                                )]]
                 window23 = sg.Window("3 resistores em serie", layout23,size=(700,700))        
                 while True:
                         event23, values23 = window23.read()
@@ -314,8 +314,8 @@ while True:
                         [sg.Text("Qual é o terceiro resistor?: "       ),sg.Input               (key=1.4                  )],
                         [sg.Text("Qual é o quatro resistor?:   "       ),sg.Input               (key=1.5                  )],
                         [sg.Text('a resistencia equivalente é:'        ),sg.Text(size=(5,1),     key='2.1.1'), sg.Text('Ω')],
-                        [sg.Text('Tensão total:                    '   ),sg.Text(size=(5,1),     key='2.1.2'), sg.Text('A')],
-                        [sg.Text('corrente inteira:                '   ),sg.Text(size=(5,1),     key='2.1.3'), sg.Text('W')],
+                        [sg.Text('Corrente total:                    ' ),sg.Text(size=(5,1),     key='2.1.2'), sg.Text('A')],
+                        [sg.Text('Potencia inteira:                '   ),sg.Text(size=(5,1),     key='2.1.3'), sg.Text('W')],
                         [sg.Text('Tensão do resistor 1:         '      ),sg.Text(size=(5,1),     key='2.2.1'), sg.Text('V')],
                         [sg.Text('Tensão do resistor 2:         '      ),sg.Text(size=(5,1),     key='2.2.2'), sg.Text('V')],
                         [sg.Text('Tensão do resistor 3:         '      ),sg.Text(size=(5,1),     key='2.2.3'), sg.Text('V')],
@@ -370,8 +370,8 @@ while True:
                         [sg.Text("Qual é o quatro resistor?:   "        ),sg.Input              (key=1.5                  )],
                         [sg.Text("Qual é o quinto resistor?:   "        ),sg.Input              (key=1.6                  )],
                         [sg.Text('a resistencia equivalente é:'         ),sg.Text(size=(5,1),    key='2.1.1'), sg.Text('Ω')],
-                        [sg.Text('Tensão total:                    '    ),sg.Text(size=(5,1),    key='2.1.2'), sg.Text('A')],
-                        [sg.Text('corrente inteira:                '    ),sg.Text(size=(5,1),    key='2.1.3'), sg.Text('W')],
+                        [sg.Text('Corrente total:                    '  ),sg.Text(size=(5,1),    key='2.1.2'), sg.Text('A')],
+                        [sg.Text('Potencia inteira:                '    ),sg.Text(size=(5,1),    key='2.1.3'), sg.Text('W')],
                         [sg.Text('Tensão do resistor 1:         '       ),sg.Text(size=(5,1),    key='2.2.1'), sg.Text('V')],
                         [sg.Text('Tensão do resistor 2:         '       ),sg.Text(size=(5,1),    key='2.2.2'), sg.Text('V')],
                         [sg.Text('Tensão do resistor 3:         '       ),sg.Text(size=(5,1),    key='2.2.3'), sg.Text('V')],
